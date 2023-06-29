@@ -10,7 +10,8 @@ namespace ABS.FileGeneration.Test
         [SetUp]
         public void Setup()
         {
-            this.subTempFileProvider = new TemporaryFilePathProvider(@"C:\Some\Nonsense\Path");
+            this.subTempFileProvider = Substitute.ForPartsOf<TemporaryFilePathProvider>(@"C:\Some\Nonsense\Path");
+            this.subTempFileProvider.When(o => o.DeleteFile(Arg.Any<string>())).DoNotCallBase();
             this.subWorkbookGenerator = Substitute.For<IWorkbookGenerator>();
         }
 
