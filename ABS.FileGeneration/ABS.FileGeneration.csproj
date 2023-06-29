@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <PackageReference Include="ClosedXML" Version="0.102.0" />
+    <InternalsVisibleTo Include="ABS.FileGeneration.Test" />
+    <InternalsVisibleTo Include="DynamicProxyGenAssembly2" /><!-- For NSubstitute -->
   </ItemGroup>
 
 </Project>

@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABS.WebApp", "ABS.WebApp\ABS.WebApp.csproj", "{F718AE88-8EDB-495F-AB16-B950F22CD63B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABS.FileGeneration", "ABS.FileGeneration\ABS.FileGeneration.csproj", "{0F81A8D7-51D8-489E-AA13-EB4AECF832DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ABS.FileGeneration", "ABS.FileGeneration\ABS.FileGeneration.csproj", "{0F81A8D7-51D8-489E-AA13-EB4AECF832DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABS.FileGeneration.Test", "ABS.FileGeneration.Test\ABS.FileGeneration.Test.csproj", "{4D1ABC4D-3E24-44BD-A2E6-FC01A9607D49}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0F81A8D7-51D8-489E-AA13-EB4AECF832DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F81A8D7-51D8-489E-AA13-EB4AECF832DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F81A8D7-51D8-489E-AA13-EB4AECF832DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D1ABC4D-3E24-44BD-A2E6-FC01A9607D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1ABC4D-3E24-44BD-A2E6-FC01A9607D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1ABC4D-3E24-44BD-A2E6-FC01A9607D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1ABC4D-3E24-44BD-A2E6-FC01A9607D49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
