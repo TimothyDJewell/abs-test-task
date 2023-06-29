@@ -1,4 +1,6 @@
-﻿namespace ABS.FileGeneration
+﻿using ClosedXML.Excel;
+
+namespace ABS.FileGeneration
 {
     // In the future, we may want to generalize the naming to something more like `ICreateFile`, but while there's only one implementation,
     // it's easiest to keep the name matching the single class.
@@ -11,7 +13,7 @@
     {
         public void Create(TemporaryFilePath fileName)
         {
-            using (ClosedXML.Excel.IXLWorkbook workbook = new ClosedXML.Excel.XLWorkbook())
+            using (IXLWorkbook workbook = CreateInMemoryWorkbook())
             {
                 var worksheet = workbook.AddWorksheet();
                 worksheet.Cell("A1").Value = "Name";
@@ -22,5 +24,7 @@
                 workbook.SaveAs(fileName.Value);
             }
         }
+
+        internal virtual IXLWorkbook CreateInMemoryWorkbook() => new XLWorkbook();
     }
 }
